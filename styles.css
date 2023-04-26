@@ -101,23 +101,33 @@ meter {
 /*reset ends */
 
 body {
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 h1, h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Aladin', cursive;
+    text-align: end;
+    padding-right: 30px;
 }
 
 h1 {
-    font-size: 80px;
-    color: #114B5F;
+    font-size: 100px;
+    background-color: #6BAA75;
+    color: #1B2D2A;
+}
+
+h2 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FA9F42;
+    color: #1B2D2A;
 }
 
 .line {
-    height: 10px;
-    margin-bottom: 10px;
+    height: 5px;
 }
 
-#line1 {
-    background-color: #D7263D;
+#line1, #line2 {
+    background-color: #1B2D2A;
 }
