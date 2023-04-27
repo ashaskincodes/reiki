@@ -101,33 +101,58 @@ meter {
 /*reset ends */
 
 body {
-    background-color: #354F52;
+    background-color: #DAD7CD;
+}
+
+.header {
+    background-color: #344E41;
 }
 
 h1, h2 {
-    font-family: 'Chau Philomene One', sans-serif;
+    font-family: 'Calistoga', cursive;
     text-align: end;
     padding-right: 30px;
+    color: 	#A3B18A;
 }
 
 h1 {
     font-size: 90px;
-    background-color: #354F52;
-    color: #CAD2C5;
 }
 
 h2 {
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #52796F;
-    color: #CAD2C5;
 }
 
 .line {
     height: 5px;
 }
 
-#line1, #line2 {
-    background-color: #84A98C;
+#line1 {
+    background-color: #EF767A;
+}
+
+#line2 {
+    background-color: #EF767A;
+    display: none;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#blurb {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-indent: 50px;
+    color: #DAD7CD;
+    padding: 30px;
+    background-color: #344E41;
+    border: 5px solid #EF767A;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
 }
