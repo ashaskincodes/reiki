@@ -32,7 +32,33 @@
                 <img src="images/IMG-20220805-WA0005.jpg" id="brook2" id="brook2">
                 <div class="imageline"></div>
                 <p class="blurb">Brook gives me so much that I wanted to give something back to her and so I trained to become a Reiki Practitioner - the energy work I do with Brook and other dogs helps them if they're anxious or suffering from a whole host of other behavioural problems. I can honestly say that having had Reiki Brook is calmer and more settled than ever before!<br><br> I love doing this work and I want to be able to bring my expertise and to you and your family. If you think I can help you with your dog then please do get in touch. I'm fully insured and DBS checked.</p>
-                <div class="imageline"></div>
+                <button type="button" class="collapsible">FAQs</button>
+                <div class="content">
+                <p class="question">What is animal reiki?</p><br><p class="answer">Reiki is an ancient therapy that is done by channelling energy in order to heal physical, mental and emotional ailments for dogs. It can be done in person, or from a distance by an Animal Reiki Practitioner.<br><br>
+                <p class="question">What can I expect from a session?</p><br><p class="answer">I'll want to come and meet you and your dog beforehand to get a sense of what's going on for them and to hear your perspective. After the consultation and providing I can help you I usually suggest booking in 4 sessions minimum so we can work through the issues over time and so that you can really see them progress.<br><br>
+                <p class="question">How much is a session?</p><br><p class="answer">The consultation is free, and each full 45-minute Reiki session is £50 after that. For block bookings of four sessions, I offer a 10% discount. </p>
+                </div>
+                <button type="button" class="collapsible">TESTIMONIALS</button>
+                <div class="content">
+                <p>Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. <img src="images/samoyed.jpg"> Massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam</p>
+                </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                    </script>
+                <div class="imageline" id="belowfaqs"></div>
                 <img src="images/IMG-20210517-WA0043.jpg" class="brookimage" id="brook4">
                 <div class="imageline"></div>
                 <div class="contact">

@@ -151,14 +151,14 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     font-weight: 700;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 400;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -245,9 +245,6 @@ h2 {
     border-radius: 50%;
 }
 
-#brook4 {
-}
-
 #vertleft {
     border-left: 2px dotted #4F6367;
     height: 100%;
@@ -258,6 +255,45 @@ h2 {
     border-right: 2px dotted #4F6367;
     height: 100%;
     grid-column: 4 / 5;
+}
+
+.collapsible {
+    margin-top: 2vh;
+    background-color: #4F6367;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: 'Super Grotesk Offc Pro', sans-serif;
+    color: var(--heading-color);
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.content {
+    font-family: 'Minion Pro', sans-serif;
+    padding: 0 18px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    display: none;
+    overflow: hidden;
+    background-color: #4F6367;
+    border-left: 2px dotted #4F6367;
+    border-right: 2px dotted #4F6367;
+    border-bottom: 2px dotted #4F6367;
+    font-size: 5vw;
+    font-weight: 800;
+    color: var(--heading-color);
+}
+
+.question {
+    color:#FF8981;
+}
+
+#belowfaqs {
+    margin-top: 2vh;
 }
 
 .contacttext {
