@@ -100,6 +100,10 @@ meter {
 
 /*reset ends */
 
+* {
+    font-display: block;
+}
+
 :root {
     --background-color: #4F6367;
     --heading-color: #EEF5DB;
@@ -110,15 +114,21 @@ meter {
     --text-color: black;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     width: 100%;
-    background-color: #EEF5DB;
 }
+
+#bg {
+    background-image: url("images/AdobeStock_257326827.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -5;
+}
+
 
 .headbar {
     position: fixed;
@@ -147,7 +157,7 @@ h1, h2 {
     grid-column: 1 / 2;
     grid-row: 2 / 6;
     justify-self: end;
-    z-index: 1;
+    z-index: 3;
 }
 
 h1 {
@@ -199,11 +209,6 @@ h2 {
     display: grid;
     grid-template-columns: 5% 5% 80% 5% 5%;
     grid-template-rows: auto;
-    background-image: url('images/AdobeStock_257326827.jpeg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: repeat-y;
 }
 
 .text {
@@ -261,16 +266,33 @@ h2 {
     margin-top: 2vh;
     background-color: #4F6367;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     width: 100%;
     border: none;
-    text-align: center;
     outline: none;
     font-family: 'Super Grotesk Offc Pro', sans-serif;
     color: var(--heading-color);
     font-size: 6vw;
     font-weight: 700;
     z-index: 4;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+#faqs, #testimonials {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+
+#faqsicon, #testimonialicon {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.collapsibleicon {
+    width: 5vw;
 }
 
 .content {
@@ -298,6 +320,7 @@ h2 {
 }
 
 .contacttext {
+    padding-top: 3vh;
     font-family: 'Minion Pro', sans-serif;
     font-size: 10vw;
     font-weight: 800;
@@ -331,7 +354,7 @@ h2 {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
         justify-self: center;
-        z-index: 1;
+        z-index: 3;
         width: 7vw;
     }
     
